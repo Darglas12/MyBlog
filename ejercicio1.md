@@ -1,4 +1,4 @@
-# Guía para desplegar el tema Jekyll **minima** en GitHub Pages
+# Guía para desplegar el tema Jekyll minima en GitHub Pages
 
 Esta guía describe paso a paso cómo crear un sitio con Jekyll usando el tema **minima** y desplegarlo en **GitHub Pages**.
 

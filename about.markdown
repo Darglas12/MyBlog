@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Diego Abián González
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hola, soy una persona curiosa a la que le gusta aprender cosas nuevas y trabajar en proyectos que me permitan seguir mejorando día a día. Me interesan las herramientas digitales, el desarrollo personal y las actividades creativas. Disfruto explorando nuevas ideas, resolviendo problemas y compartiendo lo que voy aprendiendo por el camino.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Este espacio es una parte de ese proceso, donde puedo experimentar, crear contenido y seguir creciendo tanto a nivel personal como profesional.
 
-
-[jekyll-organization]: https://github.com/jekyll
