@@ -1,6 +1,6 @@
 # Guía para desplegar el tema Jekyll minima en GitHub Pages
 
-Esta guía describe paso a paso cómo crear un sitio con Jekyll usando el tema **minima** y desplegarlo en **GitHub Pages**.
+Esta guía describe paso a paso cómo crear un sitio con Jekyll usando el tema minima y desplegarlo en GitHub Pages.
 
 ---
 
@@ -41,6 +41,7 @@ Edita el archivo `Gemfile` y añade:
 gem "jekyll"
 gem "minima"
 ```
+![Imagen](/assets/img/Imagen1jek.jpg.png)
 
 Instala dependencias:
 
@@ -67,6 +68,9 @@ theme: minima
 title: "Mi sitio con Minima"
 author: "Tu nombre"
 ```
+
+![Imagen](/assets/img/Imagen2jek.jpg.png)
+![Imagen](/assets/img/Imagen3jek.jpg.png)
 
 Si el archivo contiene `theme: minima` y `plugins:`, puedes dejarlos tal cual.
 
@@ -114,59 +118,7 @@ git push -u origin main
 3. En *Build and deployment*, selecciona:
    - **Source**: *GitHub Actions* o *Deploy from a branch*.
 
-### Opción A: Usar GitHub Actions (recomendado)
-
-GitHub suele detectar Jekyll automáticamente. Si no lo hace:
-
-1. Crea `.github/workflows/jekyll.yml` con:
-
-```yaml
-name: Jekyll site CI
-
-on:
-  push:
-    branches: ["main"]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.1"
-          bundler-cache: true
-      - run: bundle exec jekyll build -d ./_site
-      - uses: actions/upload-pages-artifact@v2
-        with:
-          path: "./_site"
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v2
-```
-
-2. Guarda y sube los cambios.
-3. GitHub generará tu sitio automáticamente.
-
-### Opción B: Usar "Deploy from a branch"
-
-1. Elige la rama `main`.
-2. Selecciona la carpeta raíz `/`.
-3. Guarda.
-
-> Nota: Para esta opción tu repositorio **no** debe requerir plugins de Jekyll no permitidos por GitHub Pages.
-
----
+GitHub suele detectar Jekyll automáticamente. 
 
 ## 8. Visitar tu sitio
 
